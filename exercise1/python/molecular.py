@@ -1,5 +1,6 @@
 class Molecular:
     def __init__(self, file_name):
+<<<<<<< HEAD
         self.charge_ = 0
         self.spin_ = 0
         self.basis_ = None
@@ -44,6 +45,24 @@ class Molecular:
         print("=" * 50)
 
     # Getter 方法
+=======
+        # TODO:
+        self.charge_ = 0
+        self.spin_ = 0
+        self.basis_ = None
+        self.atoms_ = None
+        self.initial_lize()
+
+    def initial_lize(self):
+        # TODO:
+        pass
+
+    # print the information of the molecule
+    def print(self):
+        pass
+
+    # Getter
+>>>>>>> upstream/AAA-Source-tyb-branch
     def get_atoms(self):
         return self.atoms_
 
@@ -56,12 +75,20 @@ class Molecular:
     def get_basis(self):
         return self.basis_
 
+<<<<<<< HEAD
     # Setter 方法
+=======
+    # Setter
+>>>>>>> upstream/AAA-Source-tyb-branch
     def set_atoms(self, atoms):
         self.atoms_ = atoms
 
     def set_charge(self, charge):
+<<<<<<< HEAD
         self.charge_ = charge  # 修正拼写错误
+=======
+        self.charge_ = charge
+>>>>>>> upstream/AAA-Source-tyb-branch
 
     def set_spin(self, spin):
         self.spin_ = spin
@@ -71,6 +98,7 @@ class Molecular:
 
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     # 创建示例XYZ文件（如果不存在）
     xyz_content = """3
 水分子示例
@@ -93,3 +121,7 @@ H   -0.757000    0.586000    0.000000"""
     print(f"获取自旋: {mol.get_spin()}")
     print(f"获取基组: {mol.get_basis()}")
     print(f"获取原子数: {len(mol.get_atoms())}")
+=======
+    mol = Molecular("h2o.xyz")
+    mol.print()
+>>>>>>> upstream/AAA-Source-tyb-branch

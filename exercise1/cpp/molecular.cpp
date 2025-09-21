@@ -1,4 +1,5 @@
 #include "molecular.h"
+<<<<<<< HEAD
 #include <fstream>
 #include <sstream>
 #include <iostream>
@@ -108,3 +109,22 @@ std::ostream &operator<<(std::ostream &os, const Molecular &molecule) {
     
     return os;
 }
+=======
+
+Molecular::Molecular(const std::string &filename) {
+  /*
+  TODO: read filename and parse the file
+  */
+}
+Molecular::Molecular(const Molecular &other) {
+  /*
+  TODO: copy constructor
+  */
+}
+Molecular::Molecular(Molecular &&other) {
+  /*
+  TODO: move constructor
+  */
+}
+
+>>>>>>> upstream/AAA-Source-tyb-branch
