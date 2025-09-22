@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+*.xyz
+*.txt
+build/
+__pycache__/
+*.o
+=======
 # macOS system files
 .DS_Store
 
@@ -17,3 +24,4 @@ __pycache__/
 .venv
 env/
 venv/
+>>>>>>> upstream/AAA-Source-tyb-branch
