@@ -11,11 +11,12 @@ def matrix_multiply(a, b):
         for j in range(col):
             for k in range(ld):
                 # c_ij += a_ik * b_kj
-                pass
+                c[i, j] += a[i, k] * b[k, j]
     return c
 
 
 if __name__ == "__main__":
-    a = np.array([[1, 2], [3, 4]])
-    b = np.array([[5, 6], [7, 8]])
+    a = np.array([[1.0, 2.0, 3.0], [4.0, 5.0, 6.0], [7.0, 8.0, 9.0]])
+    b = a.copy()
     print(matrix_multiply(a, b))
+    print(np.dot(a, b))
