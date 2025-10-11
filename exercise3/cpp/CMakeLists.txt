@@ -30,4 +30,4 @@ include_directories(${OpenBLAS_INCLUDE_DIRS})
 
 # Add executable
 add_executable(${PROJECT_NAME} main.cpp)
-target_link_libraries(${PROJECT_NAME} PRIVATE ${OpenBLAS_LIBRARIES} OpenMP::OpenMP_CXX)
+target_link_libraries(${PROJECT_NAME} PRIVATE ${OpenBLAS_LIBRARIES} OpenMP::OpenMP_CXX lapacke)
